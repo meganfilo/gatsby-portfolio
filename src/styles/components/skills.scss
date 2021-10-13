@@ -1,0 +1,49 @@
+article.skills {
+    background-color: $secondary-color;
+    transform: skew(0deg, -7deg);
+
+    .skills__content {
+        transform: skew(0deg, 7deg);
+    }
+
+    h2 {
+        background-size: 6rem 1.5rem;
+    }
+
+    .skills__grid {
+        display: flex;
+        flex-flow: wrap column;
+
+        .skills__grid--item {
+            margin: 1rem 0;
+            ul {
+                list-style: none;
+                list-style-position: outside;
+        
+                li::before {
+                    content: "▹";
+                    color: $primary-color;
+                    left: 0px;
+                    font-size: 1em;
+                    margin-right: .5rem;
+                }
+            }
+        }
+        .skills__grid--item:last-child {
+            margin-bottom: 2rem;
+        }
+    }
+
+    @media screen and (min-width: 640px) {
+        .skills__grid {
+            flex-direction: row;
+            justify-content: space-between;
+            margin: 0 auto;
+
+            .skills__grid--item {
+                flex-basis: 18rem;
+                padding: 0 2rem;
+            }
+        }
+    }
+}

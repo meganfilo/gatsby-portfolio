@@ -1,0 +1,52 @@
+div.mobilenav__popout {
+    height: 100%;
+    background: $secondary-color;
+    box-shadow: -4px 0px 9px -5px rgba(0,0,0,0.66);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: auto;
+    width: 70%;
+    max-width: 400px;
+    z-index: 2;
+    display: none;
+    visibility: hidden;
+    text-align: right;
+
+    &.open {
+        display: block;
+        visibility: visible;
+    }
+}
+
+.mobilenav__link-list {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: -5rem 2rem 0 0;
+}
+
+.mobilenav__link {
+    text-decoration: none;
+    color: $text-color;
+    font-size: 1.2em;
+    margin: 1em 0;
+}
+
+.hamburger__button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.close__button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    margin: 1.5rem 1rem 0 0;
+    
+    img {
+        width: 30px;
+    }
+}

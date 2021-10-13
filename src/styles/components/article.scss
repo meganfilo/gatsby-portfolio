@@ -1,0 +1,40 @@
+header.article__header {
+    padding: 2rem 0;
+
+    h1 {
+        margin: 0;
+        padding: 0;
+    }
+
+    p {
+        color: lighten($text-color, 20%);
+    } 
+}
+
+article.article__body {
+    & > h2:not(:first-child), h3:not(:first-child), h4:not(:first-child), h5:not(:first-child) {
+        margin-top: 4rem;
+    }
+
+    h2 {
+        background-image: none;
+        text-align: left;
+        border-bottom: 1px solid #eee;
+        color: #111;
+
+    }
+
+    h3 {
+        color: $header-color;
+    }
+
+    h4 {
+        color: #777;
+        font-size: 1.35em;
+        line-height: 1.25em;
+    }
+    
+    h5 {
+        font-size: 1.25em;
+    }
+}

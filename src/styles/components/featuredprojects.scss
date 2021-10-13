@@ -1,0 +1,26 @@
+article.featured-projects {
+    text-align: center;
+
+    h2 {
+        background-size: 16rem 1.5rem;
+    }
+
+    .button {
+        background-color: $primary-color;
+        color: $white;
+        padding: .5rem 1rem;
+        text-decoration: none;
+        display: inline-block;
+        border: 2px solid $primary-color;
+        border-radius: 6px;
+
+        &:hover, 
+        &:focus {
+            // background-color: darken($primary-light, 20%);
+            // border-color: darken($primary-light, 20%);
+            background-color: $primary-light;
+            border-color: $primary-light;
+            transition: background-color 0.2s ease-in, border-color 0.2s ease-in;
+        }
+    }
+}

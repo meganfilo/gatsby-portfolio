@@ -1,0 +1,45 @@
+.portfolio .projects {
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+
+    .project {
+        border-bottom: 1px solid #eee;
+        padding: 1rem 0;
+
+        .project-info {
+            text-align: left;
+        }
+        ul, .links {
+            justify-content: flex-start;
+        }
+        li, .links a {
+            margin: 0 1.5rem 0 0;
+        }
+    }   
+}
+
+@media screen and (min-width: 650px) {
+    .portfolio .projects {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: stretch;
+        justify-content: center;
+
+        
+        .project {
+            flex-basis: 15rem;
+            border: 1px solid #eee;
+            padding-left: 1rem;
+            padding-right: 1rem;
+            &:nth-child(2n+1) {
+                background-color: $secondary-color;
+
+            }
+        }
+    }
+
+    section:first-child {
+        margin: 0;
+    }
+}

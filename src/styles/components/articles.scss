@@ -1,0 +1,43 @@
+div.content-page.articles {
+    .article__posting {
+        padding: 1.5rem .5rem;
+        display: block;
+        border-bottom: 1px solid #eee;
+        background-color: $white;
+        text-decoration: none;
+        border-radius: 5px;
+
+        &:first-of-type {
+            margin-top: 2rem;
+        }
+
+        &:hover, &:focus {
+            background-color: #eee;
+            transition: background-color 0.2s ease-in-out;
+        }
+    }
+
+    .article__posting--content {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-content: baseline;
+
+        .img-container {
+            margin: 0 1rem 0 0;
+            max-width: 200px;
+            img {
+                width: 3rem;
+            }
+        }
+
+        h3 {
+            margin: 0;
+        }
+
+        .date {
+            color: lighten($text-color, 20%);
+            margin: 0;
+        }
+    }
+}
